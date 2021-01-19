@@ -17,7 +17,7 @@ function ajoutTodo() {
 }
 
 function deleteTodo(indice) {
-    fetch('https://maxbzh.pythonanywhere.com/todo' + indice, {
+    fetch('https://maxbzh.pythonanywhere.com/todo/' + indice, {
         method: 'DELETE'})
         .then(response => rafraichirHTML())
 }
